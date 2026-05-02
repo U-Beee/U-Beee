@@ -3,141 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayoub Ajnaki | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Ayoub Ajnaki | CS Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="top-header">
-    <div class="logo-container">
-      <img src="logo.png" alt="U-Beee Logo" class="logo" />
-      <span class="brand-name">Ayoub Ajnaki</span>
-    </div>
-    <nav class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">Ayoub Ajnaki</div>
 
-<section class="hero" id="top">
-    <div class="hero-content">
-      <h1>Hello, I'm Ayoub Ajnaki</h1>
-      <p>Computer Science Student | Aspiring Game & Web Developer</p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
-    </div>
-  </section>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<section class="projects" id="projects">
-  <h2>Featured Projects</h2>
-  <div class="project-grid">
-    <div class="card">
-      <img src="images/snake_game.png" alt="Snake Game">
-      <div class="card-content">
-        <h3>Snake Game</h3>
-        <p>
-          A classic Snake game developed using Pygame, featuring smooth directional control, real-time collision detection, and dynamic score tracking. 
-          This project focuses on implementing game loops, handling user input, and managing state changes efficiently.
-        </p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/snake-game" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Computer Science Student</h1>
+  <p>Building software, games, and real-world applications</p>
 
-    <div class="card">
-      <img src="images/space_invaders.png" alt="Space Invaders">
-      <div class="card-content">
-        <h3>Space Invaders</h3>
-        <p>
-          A 2D arcade-style shooter where the player controls a spaceship to eliminate incoming enemies. 
-          Includes projectile mechanics, enemy movement patterns, and collision detection, emphasizing object-oriented design and real-time game logic.
-        </p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Space-Invaders" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/flappy_bird.png" alt="Flappy Bird">
-      <div class="card-content">
-        <h3>Flappy Bird Clone</h3>
-        <p>
-          An endless runner game implementing gravity-based physics and obstacle avoidance mechanics. 
-          Designed to handle real-time input and continuous motion, with a focus on timing, responsiveness, and smooth gameplay experience.
-        </p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Flappy-Bird-Clone" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/typing_test.png" alt="Typing Test">
-      <div class="card-content">
-        <h3>Typing Speed Test</h3>
-        <p>
-          An interactive application that measures typing speed and accuracy using timed text input. 
-          Focuses on user interaction, real-time feedback, and text processing, helping to reinforce event handling and timing logic.
-        </p>
-        <div class="tags"><span>Pygame</span><span>Tkinter</span></div>
-        <a href="https://github.com/U-Beee/Typing-Speed-Test" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
+  <div class="hero-buttons">
+    <a href="#projects">View Projects</a>
+    <a href="#contact">Contact Me</a>
   </div>
 </section>
 
-<section class="about" id="about">
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <!-- U-Beee (MAIN PROJECT) -->
+    <div class="card">
+      <h3>U-Beee Platform (Full Stack)</h3>
+      <p>Course platform with authentication, course system, and user management. Built as a real-world web application project.</p>
+      <p><b>What I learned:</b> Full-stack development, system design, authentication</p>
+      <a href="https://github.com/U-Beee" target="_blank">GitHub</a>
+    </div>
+
+    <!-- GAME -->
+    <div class="card">
+      <h3>Snake Game (Python)</h3>
+      <p>Classic game built with Pygame using object movement, collision detection, and score system.</p>
+      <p><b>What I learned:</b> Game loops, logic, event handling</p>
+      <a href="https://github.com/U-Beee" target="_blank">GitHub</a>
+    </div>
+
+    <!-- TOOL -->
+    <div class="card">
+      <h3>Calculator App</h3>
+      <p>Simple calculator built using JavaScript for DOM manipulation and logic handling.</p>
+      <p><b>What I learned:</b> JavaScript logic, UI interaction</p>
+      <a href="https://github.com/U-Beee" target="_blank">GitHub</a>
+    </div>
+
+    <!-- DATA -->
+    <div class="card">
+      <h3>Data Analysis Project</h3>
+      <p>Python project analyzing datasets using basic statistics and visualization.</p>
+      <p><b>What I learned:</b> Data handling, Python libraries</p>
+      <a href="https://github.com/U-Beee" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
   <h2>About Me</h2>
-  <div class="about-container">
-    <img src="images/ayoub.png" alt="Ayoub Ajnaki" class="about-image">
-    <div class="about-text">
-      <p>
-        Hello! I'm Ayoub Ajnaki, a Computer Science student dedicated to building efficient software and solving complex technical challenges.
-        I focus on creating high-performance applications that balance robust logic with clean design. Outside of development, I explore emerging tech and strategy-driven gaming,
-        using this site to document my projects and growth as I build more advanced software tools and interactive systems.
-      </p>
-      <p>
-        Constantly learning, building, and sharing. Let's create something amazing together.
-      </p>
-      <a href="#contact">Contact Me</a>
-    </div>
+
+  <p>
+    I am a Computer Science student who transitioned from Physics to programming because I am passionate about building real software systems.
+    My goal is to become a professional application and game developer.
+  </p>
+
+  <p>
+    I focus on solving problems with code, finishing real projects, and continuously improving my skills in software development.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <p>Email: <a href="mailto:ajnakiayoub01@gmail.com">ajnakiayoub01@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/U-Beee" target="_blank">github.com/U-Beee</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">My LinkedIn</a></p>
+
+  <div class="icons">
+    <a href="https://github.com/U-Beee"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
   </div>
 </section>
 
-<section class="contact" id="contact">
-    <div class="contact-banner">
-      <img src="images/banner.png" alt="Banner">
-    </div>
-    <div class="contact-container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:introayoubag@gmail.com">introayoubag@gmail.com</a></p>
-      <p>Phone: +212 689658607</p>
-      <div class="social-icons">
-        <a href="https://www.youtube.com/@U-Beee" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/ubeee_oficial" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://web.facebook.com/ayoub.ajnaki.7" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://github.com/U-Beee" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ayoub-ajnaki/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="footer">
-  &copy; 2025 Ayoub Ajnaki — U-Beee
-</div>
+<footer>
+  <p>© 2026 Ayoub Ajnaki</p>
+</footer>
 
 </body>
 </html>

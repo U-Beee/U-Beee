@@ -8,38 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { margin: 0; font-family: 'Poppins', sans-serif; background: #f4f4f4; color: #333; }
-    header { background: #00C897; padding: 20px; color: white; display: flex; justify-content: space-between; align-items: center; }
-    header nav a { color: white; margin: 0 15px; text-decoration: none; }
-    .hero { text-align: center; padding: 80px 20px; }
-    .hero h1 { font-size: 48px; margin-bottom: 10px; }
-    .hero p { font-size: 20px; margin-bottom: 30px; }
-    .hero a { padding: 10px 20px; background: #333; color: white; text-decoration: none; border-radius: 8px; margin: 5px; display: inline-block; }
-    .projects { padding: 60px 20px; max-width: 1200px; margin: auto; }
-    .projects h2 { text-align: center; margin-bottom: 40px; }
-    .project-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
-    .card { background: white; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; flex: 0 1 calc(33.333% - 20px); display: flex; flex-direction: column; }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
-    .card-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
-    .card-content h3 { margin-top: 0; }
-    .tags { margin-top: 10px; }
-    .tags span { background: #eee; padding: 5px 10px; border-radius: 20px; margin: 3px; display: inline-block; font-size: 14px; }
-    .card-content a { margin-top: auto; text-decoration: none; color: #00C897; font-weight: bold; }
-    .about, .contact { padding: 60px 20px; max-width: 900px; margin: auto; }
-    .about h2, .contact h2 { text-align: center; margin-bottom: 30px; }
-    .footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .social-icons a { color: #333; margin: 0 10px; text-decoration: none; font-size: 20px; }
-  </style>
 </head>
 <body>
 
 <header class="top-header">
     <div class="logo-container">
       <img src="logo.png" alt="U-Beee Logo" class="logo" />
-      <span class="brand-name">U-Beee</span>
+      <span class="brand-name">Ayoub Ajnaki</span>
     </div>
-    <nav class="nav-menu">
+    <nav class="nav-links">
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -49,7 +26,7 @@
 <section class="hero" id="top">
     <div class="hero-content">
       <h1>Hello, I'm Ayoub Ajnaki</h1>
-      <p>Software Engineering Student | Aspiring Game & Web Developer</p>
+      <p>Computer Science Student | Aspiring Game & Web Developer</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="#contact" class="btn">Contact Me</a>
@@ -58,35 +35,18 @@
   </section>
 
 <section class="projects" id="projects">
-  <h2>My Projects</h2>
+  <h2>Featured Projects</h2>
   <div class="project-grid">
     <div class="card">
       <img src="images/snake_game.png" alt="Snake Game">
       <div class="card-content">
         <h3>Snake Game</h3>
-        <p>Classic snake game where the snake grows after eating food. Great to learn loops and collision detection.</p>
+        <p>
+          A classic Snake game developed using Pygame, featuring smooth directional control, real-time collision detection, and dynamic score tracking. 
+          This project focuses on implementing game loops, handling user input, and managing state changes efficiently.
+        </p>
         <div class="tags"><span>Pygame</span></div>
         <a href="https://github.com/U-Beee/snake-game" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/tic_tac_toe.png" alt="Tic-Tac-Toe">
-      <div class="card-content">
-        <h3>Tic-Tac-Toe</h3>
-        <p>Simple 3x3 grid game — perfect to practice if-else and win logic.</p>
-        <div class="tags"><span>Tkinter</span><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/pong.png" alt="Pong">
-      <div class="card-content">
-        <h3>Pong</h3>
-        <p>Two-player paddle game with ball collision detection and simple AI.</p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Pong" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
     </div>
 
@@ -94,7 +54,10 @@
       <img src="images/space_invaders.png" alt="Space Invaders">
       <div class="card-content">
         <h3>Space Invaders</h3>
-        <p>Player moves a spaceship to shoot enemies. Covers object movement and collisions.</p>
+        <p>
+          A 2D arcade-style shooter where the player controls a spaceship to eliminate incoming enemies. 
+          Includes projectile mechanics, enemy movement patterns, and collision detection, emphasizing object-oriented design and real-time game logic.
+        </p>
         <div class="tags"><span>Pygame</span></div>
         <a href="https://github.com/U-Beee/Space-Invaders" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
@@ -104,39 +67,12 @@
       <img src="images/flappy_bird.png" alt="Flappy Bird">
       <div class="card-content">
         <h3>Flappy Bird Clone</h3>
-        <p>Simple endless runner with gravity and object avoidance mechanics.</p>
+        <p>
+          An endless runner game implementing gravity-based physics and obstacle avoidance mechanics. 
+          Designed to handle real-time input and continuous motion, with a focus on timing, responsiveness, and smooth gameplay experience.
+        </p>
         <div class="tags"><span>Pygame</span></div>
         <a href="https://github.com/U-Beee/Flappy-Bird-Clone" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/brick_breaker.png" alt="Brick Breaker">
-      <div class="card-content">
-        <h3>Breakout / Brick Breaker</h3>
-        <p>Paddle-based game to keep a ball bouncing and break bricks.</p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Brick-Breaker" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/memory_puzzle.png" alt="Memory Puzzle">
-      <div class="card-content">
-        <h3>Memory Puzzle</h3>
-        <p>Click to reveal two cards and see if they match — array manipulation practice.</p>
-        <div class="tags"><span>Pygame</span></div>
-        <a href="https://github.com/U-Beee/Memory-Puzzle" target="_blank" rel="noopener noreferrer">View Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="images/hangman.png" alt="Hangman">
-      <div class="card-content">
-        <h3>Hangman</h3>
-        <p>Text-based word guessing game — good for string, loop, and condition practice.</p>
-        <div class="tags"><span>Console</span></div>
-        <a href="https://github.com/U-Beee/Hangman" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
     </div>
 
@@ -144,7 +80,10 @@
       <img src="images/typing_test.png" alt="Typing Test">
       <div class="card-content">
         <h3>Typing Speed Test</h3>
-        <p>Display random words for player to type fast. Great for timers and input handling.</p>
+        <p>
+          An interactive application that measures typing speed and accuracy using timed text input. 
+          Focuses on user interaction, real-time feedback, and text processing, helping to reinforce event handling and timing logic.
+        </p>
         <div class="tags"><span>Pygame</span><span>Tkinter</span></div>
         <a href="https://github.com/U-Beee/Typing-Speed-Test" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
@@ -158,10 +97,9 @@
     <img src="images/ayoub.png" alt="Ayoub Ajnaki" class="about-image">
     <div class="about-text">
       <p>
-        Hello! I'm Ayoub Ajnaki, a Software Engineering student passionate about web development and game design.
-        I love creating applications that are both functional and visually appealing.
-        When I'm not coding, you'll find me exploring new technologies, gaming, or watching tech documentaries.
-        This site showcases my projects and learning journey, and I aim to expand it with more apps, games, and web tools in the future.
+        Hello! I'm Ayoub Ajnaki, a Computer Science student dedicated to building efficient software and solving complex technical challenges.
+        I focus on creating high-performance applications that balance robust logic with clean design. Outside of development, I explore emerging tech and strategy-driven gaming,
+        using this site to document my projects and growth as I build more advanced software tools and interactive systems.
       </p>
       <p>
         Constantly learning, building, and sharing. Let's create something amazing together.
